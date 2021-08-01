@@ -20,11 +20,39 @@ if (max1 > max2 && max1 > max3 && max1 > max4) {
 }
 
 // Zadatak 2
-console.log(string1);
+let incl1 = "";
+let incl2 = "";
+let incl3 = "";
+let incl4 = "";
+
+string1.includes("string") ? (incl1 += string1) : (incl1 = incl1);
+console.log(incl1);
+string2.includes("string") ? (incl2 += string2) : (incl2 = incl2);
+console.log(incl2);
+string3.includes("string") ? (incl3 += string3) : (incl3 = incl3);
+console.log(incl3);
+string4.includes("string") ? (incl4 += string4) : (incl4 = incl4);
+console.log(incl4);
+
+if (incl1.length < incl2.length && incl1.length < incl3.length) {
+  console.log(`string1 je najkraci koji sadrzi rec string: ${string1}`);
+} else if (incl2.length < incl1.length && incl2.length < incl3.length) {
+  console.log(`string2 je najkraci koji sadrzi rec string: ${string2}`);
+} else {
+  console.log(`string3 je najkraci koji sadrzi rec string: ${string3}`);
+}
 
 // Zadatak 3
-const totalString = string1.slice(5) + string4.slice(5);
-console.log(totalString);
+let sum = "";
+
+!string1.includes("string koji je") ? (sum += string1.slice(5)) : (sum = sum);
+console.log(sum);
+!string2.includes("string koji je") ? (sum += string2.slice(5)) : (sum = sum);
+console.log(sum);
+!string3.includes("string koji je") ? (sum += string3.slice(5)) : (sum = sum);
+console.log(sum);
+!string4.includes("string koji je") ? (sum += string4.slice(5)) : (sum = sum);
+console.log(sum);
 
 // Zadatak 4
 let quantity = 250;
